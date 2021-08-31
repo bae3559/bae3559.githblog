@@ -22,26 +22,36 @@ Human Pose Estimation은 사람의 사진을 통해서 2D나 3D의 형태로 Pos
 
 #### End to End Recovery Human Shape
 __[1]__ [HMR]() 
+
 [paper](https://arxiv.org/abs/1712.06584)
+
 [github](https://github.com/akanazawa/hmr)
+
 HMR은 CVPR 2018 best paper 였나? 어려운 방법을 사용했던 것이 아니었는데도 불구하고 성능이 당시 SOTA를 기록했을만큼 잘 나왔고, 여전히 최근 동향 논문에서도 비교하는 backbone으로 자주 쓰인다. 
 내용이 어려운 것도 아니니 정말 읽어 보는 것을 추천! 3D human pose estimation 공부를 시작할 때 이 논문으로 시작해서 아직도 인상이 많이 깊은 논문이다. 
 
 #### Keep it SMPL: Automatic Estimation of 3D Human Pose and Shape from a Single Image
 __[2]__ [SMPLify]()
+
 [paper](https://smplify.is.tue.mpg.de/)
+
 기본적으로 위 HMR 이 regression 방식이라면 SMPLify는 대표적인 optimization 방식이다. 그런 점에 있어서 차이를 비교하면서 읽으면 더 재밌을 것이다. 
 
 #### Learning to Reconstruct 3D Human Pose and Shape via Model-fitting in the Loop
 __[3]__ [SPIN]()
+
 [github](https://github.com/nkolot/SPIN)
+
 SPIN은 앞선 regression based method와 optimization based method를 적절히 섞어서 성능을 잘 이끌어 내었는데.
 2019년도 논문인데도 불구하고 여전히 성능이 높은 편이다. 
 
 #### VIBE: Video Inference for Human Body Pose and Shape Estimation
 __[4]__ [VIBE]()
+
 [paper](https://arxiv.org/abs/1912.05656)
+
 [github](https://github.com/mkocabas/VIBE)
+
 VIBE는 video 에서 3D Human pose estimation을 한다고 보면 된다. 성능이 좋았지만, occlusion에 매우 약하다는 한계점이 있었던 만큼 이후 저자가 occlusion을 보안한 method를 소개하기도 했다. 
 occlusion을 보안하기 위해 같은 저자가 소개한 논문은 PARE: part attention regressor for 3D human body estimation이고, 이후에 함께 정리하도록 하겠다. 
 
